@@ -34,6 +34,14 @@
     observerObj = [[ObserverClass alloc] init];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"observingObject" object:observerObj userInfo:@{@"string":@"This is it"}];
     [observerObj.dict setValue:@"\n *** Final Value *** \n" forKey:@"nameChanged"];
+    
+    NSString *inputStringForPalindrome = @"racecar";
+    NSLog(@"is string  %@ a palindrom %@",inputStringForPalindrome,[[SingletonClass sharedInstance]isStringAPalindrome:inputStringForPalindrome]);
+    
+    int number = 123454321;
+    NSLog(@"the reverse number is %d",[[SingletonClass sharedInstance]reverseNumber:number]);
+    NSLog(@"is the number %d a palindrome %@",number,[[SingletonClass sharedInstance]isNumberAPalindrome:number]);
+    
 }
 
 - (void)didReceiveMemoryWarning {

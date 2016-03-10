@@ -14,4 +14,7 @@
 -(NSArray*)reverseArray:(NSMutableArray*)inputArray;
 -(NSArray*)fibonacciSeries:(int)count;
 -(NSArray*)sortedArray:(NSMutableArray*)inputArray;
+-(NSString*)isStringAPalindrome:(NSString*)inputString;
+-(int)reverseNumber:(int)inputNumber;
+-(NSString*)isNumberAPalindrome:(int)inputNumber;
 @end

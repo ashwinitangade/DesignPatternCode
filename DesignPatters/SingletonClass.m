@@ -69,4 +69,39 @@
         else return NSOrderedDescending;
     }];
 }
+-(NSString*)isStringAPalindrome:(NSString*)inputString
+{
+    int strLength = (int)inputString.length;
+    for (int i=0; i<strLength/2; ) {
+        NSString *startChar = [inputString substringWithRange:NSMakeRange(i, 1)];
+        NSString *endChar  = [inputString substringWithRange:NSMakeRange(strLength - i-1, 1)];
+        if(startChar == endChar)
+        {
+            i++;
+        }
+        else{
+            return @"NO";
+        }
+    }
+    return @"YES";
+    
+}
+-(int)reverseNumber:(int)inputNumber
+{
+    int reverseNumber = 0;
+    int number = inputNumber;
+    while (number !=0) {
+        reverseNumber = reverseNumber*10 + number%10;
+        number = number/10;
+    }
+    return reverseNumber;
+}
+-(NSString*)isNumberAPalindrome:(int)inputNumber
+{
+    if (inputNumber == [self reverseNumber:inputNumber]) {
+        return @"YES";
+    }else{
+        return @"NO";
+    }
+}
 @end

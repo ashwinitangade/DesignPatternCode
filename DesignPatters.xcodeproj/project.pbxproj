@@ -15,6 +15,9 @@
 		D49DF1E41C90C60400ECC740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49DF1E21C90C60400ECC740 /* LaunchScreen.storyboard */; };
 		D49DF1EF1C90C60400ECC740 /* DesignPattersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D49DF1EE1C90C60400ECC740 /* DesignPattersTests.m */; };
 		D49DF1FA1C90C60400ECC740 /* DesignPattersUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D49DF1F91C90C60400ECC740 /* DesignPattersUITests.m */; };
+		D49DF2091C90C62700ECC740 /* SingletonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D49DF2081C90C62700ECC740 /* SingletonClass.m */; };
+		D49DF20C1C90DE0500ECC740 /* DelegateClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D49DF20B1C90DE0500ECC740 /* DelegateClass.m */; };
+		D49DF20F1C90FD5000ECC740 /* ObserverClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D49DF20E1C90FD5000ECC740 /* ObserverClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		D49DF1F51C90C60400ECC740 /* DesignPattersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignPattersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49DF1F91C90C60400ECC740 /* DesignPattersUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPattersUITests.m; sourceTree = "<group>"; };
 		D49DF1FB1C90C60400ECC740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D49DF2071C90C62700ECC740 /* SingletonClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonClass.h; sourceTree = "<group>"; };
+		D49DF2081C90C62700ECC740 /* SingletonClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonClass.m; sourceTree = "<group>"; };
+		D49DF20A1C90DE0500ECC740 /* DelegateClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateClass.h; sourceTree = "<group>"; };
+		D49DF20B1C90DE0500ECC740 /* DelegateClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateClass.m; sourceTree = "<group>"; };
+		D49DF20D1C90FD5000ECC740 /* ObserverClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObserverClass.h; sourceTree = "<group>"; };
+		D49DF20E1C90FD5000ECC740 /* ObserverClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObserverClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,12 @@
 				D49DF1E21C90C60400ECC740 /* LaunchScreen.storyboard */,
 				D49DF1E51C90C60400ECC740 /* Info.plist */,
 				D49DF1D41C90C60400ECC740 /* Supporting Files */,
+				D49DF2071C90C62700ECC740 /* SingletonClass.h */,
+				D49DF2081C90C62700ECC740 /* SingletonClass.m */,
+				D49DF20A1C90DE0500ECC740 /* DelegateClass.h */,
+				D49DF20B1C90DE0500ECC740 /* DelegateClass.m */,
+				D49DF20D1C90FD5000ECC740 /* ObserverClass.h */,
+				D49DF20E1C90FD5000ECC740 /* ObserverClass.m */,
 			);
 			path = DesignPatters;
 			sourceTree = "<group>";
@@ -270,8 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49DF20F1C90FD5000ECC740 /* ObserverClass.m in Sources */,
+				D49DF2091C90C62700ECC740 /* SingletonClass.m in Sources */,
 				D49DF1DC1C90C60400ECC740 /* ViewController.m in Sources */,
 				D49DF1D91C90C60400ECC740 /* AppDelegate.m in Sources */,
+				D49DF20C1C90DE0500ECC740 /* DelegateClass.m in Sources */,
 				D49DF1D61C90C60400ECC740 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
